@@ -3,10 +3,41 @@
 
 }
 
+body {
+    width: 1091px;
+    height: 800px;
+}
+main {
+    display: flex;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
 #content-box {
     
 }
 
 #submit-button-style {
-    
+
+}
+
+#section2 {
+    position: relative;
+    left: 40%;
+    /* flex-wrap: wrap; */
+    display: grid;
+}
+
+label {
+    display: block;
+}
+
+#submit-button-style {
+    display: block;
+    color: aliceblue;
+    background-color: black;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
 }
