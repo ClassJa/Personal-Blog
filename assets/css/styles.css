@@ -8,6 +8,7 @@ body {
     height: 800px;
 }
 main {
+    width: 1091px;
     display: flex;
     position: relative;
     top: 20%;
@@ -21,16 +22,22 @@ main {
 #submit-button-style {
 
 }
+#section1 {
+    width: 50%;
+}
+
+
 
 #section2 {
-    position: relative;
-    left: 40%;
+    width: 50%;
     /* flex-wrap: wrap; */
     display: grid;
+    
 }
 
 label {
     display: block;
+    margin: 10px 0px;
 }
 
 #submit-button-style {
