@@ -72,10 +72,10 @@ label {
 }
 
 .two-lines {
-    border: 2px solid black;
+    /* border: 3px solid black; */
     /* padding: 10px;   */
     /* margin: 3px; */
-    border: 3px double black;
+    border: thick double black;
 
 }
 
@@ -102,4 +102,9 @@ label {
 
 #content-box-styling {
     /* figure out how to extend the height of the box */
+}
+
+#scale-down-png {
+    height: 700px;
+    width: 700px;
 }
