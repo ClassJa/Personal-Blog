@@ -1,29 +1,35 @@
 * {
     background-color: aliceblue;
+    box-sizing: border-box
 
 }
 
 html {
-    width: 1091px;
+    /* width: 1091px; */
     height: 800px;
 }
 
 body {
-    width: 1091px;
+    /* width: 1091px; */
     height: 800px;
 }
 
 header {
-    width: 1091px;
+    /* width: 1091px; */
     display: flex;
     justify-content: flex-end;
+    /* justify-content: space-between; */
+    padding: 10px;
+    border-bottom: 10px;
+    
 }
 main {
-    width: 1091px;
+    /* width: 1091px; */
     display: flex;
     position: relative;
-    top: 20%;
-    left: 10%;
+    /* top: 10%; */
+    /* left: 10%; */
+    
 }
 
 #content-box {
@@ -32,20 +38,29 @@ main {
 
 /* DEBUG: why won't this button show up at the right most corner of the page */
 #light-dark-mode-toggle {
+    position: relative;
+    right: 0px;
+    
   
 }
 
 #section1 {
-    width: 545.5px;
+    /* width: 545.5px; */
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between */
 }
 
 #section2 {
-    width: 545.5px;
+    /* width: 545.5px; */
     /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px;
+
+    /* padding: 40px; */
+    /* margin-right: 0px; */
     
 }
 
@@ -69,7 +84,7 @@ label {
     flex-direction: column;
     color: aliceblue;
     background-color: black;
-    width: fit-content;
+    /* width: fit-content; */
     justify-self: center;
     align-self: center;
     margin: 15px 0px 10px 0px;
