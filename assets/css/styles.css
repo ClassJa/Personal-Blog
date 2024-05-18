@@ -56,6 +56,14 @@ label {
     margin: 10px 0px 10px 0px;
 }
 
+.two-lines {
+    border: 2px solid black;
+    /* padding: 10px;   */
+    /* margin: 3px; */
+    border: 3px double black;
+
+}
+
 #submit-button-style {
     display: flex;
     flex-direction: column;
@@ -66,6 +74,7 @@ label {
     align-self: center;
     margin: 15px 0px 10px 0px;
     padding: 5px 250px;
+    margin-bottom: 150px;
 
 }
 
@@ -73,6 +82,7 @@ label {
     width: fit-content;
     position: relative;
     left: 160px;
+    margin-top: 150px;
 }
 
 #content-box-styling {
