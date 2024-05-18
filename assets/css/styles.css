@@ -3,9 +3,20 @@
 
 }
 
+html {
+    width: 1091px;
+    height: 800px;
+}
+
 body {
     width: 1091px;
     height: 800px;
+}
+
+header {
+    width: 1091px;
+    display: flex;
+    justify-content: flex-end;
 }
 main {
     width: 1091px;
@@ -19,32 +30,51 @@ main {
     
 }
 
-#submit-button-style {
-
+/* DEBUG: why won't this button show up at the right most corner of the page */
+#light-dark-mode-toggle {
+  
 }
+
 #section1 {
-    width: 50%;
+    width: 545.5px;
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 #section2 {
-    width: 50%;
+    width: 545.5px;
     /* flex-wrap: wrap; */
-    display: grid;
+    display: flex;
+    flex-direction: column;
     
 }
 
 label {
-    display: block;
-    margin: 10px 0px;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
 }
 
 #submit-button-style {
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: aliceblue;
     background-color: black;
     width: fit-content;
     justify-self: center;
     align-self: center;
+    margin: 15px 0px 10px 0px;
+    padding: 5px 250px;
+
+}
+
+#question {
+    width: fit-content;
+    position: relative;
+    left: 160px;
+}
+
+#content-box-styling {
+    /* figure out how to extend the height of the box */
 }
