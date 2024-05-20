@@ -5,28 +5,24 @@
 }
 
 html {
-    /* width: 1091px; */
-    height: 800px;
+
 }
 
 body {
-    /* width: 1091px; */
-    height: 800px;
+ /* display: flex;
+ flex-direction: column; */
 }
 
 header {
-    /* width: 1091px; */
     display: flex;
     justify-content: flex-end;
-    /* justify-content: space-between; */
     padding: 10px;
-    border-bottom: 10px;
+    border-bottom: 20px;
     
 }
 main {
-    /* width: 1091px; */
     display: flex;
-    position: relative;
+    /* position: relative; */
     /* top: 10%; */
     /* left: 10%; */
     
@@ -40,41 +36,35 @@ main {
 #light-dark-mode-toggle {
     position: relative;
     right: 0px;
-    
   
+}
+
+#light-dark-mode-toggle::after {
+
 }
 
 #section1 {
     /* width: 545.5px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between */
 }
 
 #section2 {
-    /* width: 545.5px; */
-    /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 20px;
-
-    /* padding: 40px; */
-    /* margin-right: 0px; */
+    margin-right: 0px;
     
 }
 
 label {
-    /* display: block; */
     display: flex;
     flex-direction: column;
     margin: 10px 0px 10px 0px;
 }
 
 .two-lines {
-    /* border: 3px solid black; */
-    /* padding: 10px;   */
-    /* margin: 3px; */
     border: thick double black;
 
 }
@@ -101,10 +91,11 @@ label {
 }
 
 #content-box-styling {
+    line-height: 20px;
     /* figure out how to extend the height of the box */
 }
 
 #scale-down-png {
-    height: 700px;
-    width: 700px;
+    height: 750px;
+    width: 750px;
 }

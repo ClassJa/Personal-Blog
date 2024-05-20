@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <button id="light-dark-mode-toggle">Light/Dark Mode Toggle</button>
+        <button type="checkbox" id="light-dark-mode-toggle">Light/Dark Mode Toggle</button>
+        
     </header>
     <main>
         <section id="section1" class="two-lines">
@@ -17,7 +18,7 @@
             <!-- <div>Add design Here</div> -->
         </section>
         <section id="section2" class="two-lines">
-            <h2 id="question">What's on our mind?</h2>
+            <h2 id="question">What's on your mind?</h2>
             <label for="username">Username</label>
             <input type="text" username="username" required minlength="3">
 
@@ -25,12 +26,11 @@
             <input type="text" username="title" required minlength="3">
             
             <label for="content" id="content-box-styling">Content</label>
-            <input type="text" id="content-box" username="content" required minlength="3">
+            <textarea type="text" id="content-box" username="content" required minlength="3"></textarea>
             
             <button id="submit-button-style">Submit</button>
         </section>
     </main>
-
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>
