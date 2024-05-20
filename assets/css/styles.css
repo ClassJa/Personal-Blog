@@ -34,8 +34,9 @@ main {
 
 /* DEBUG: why won't this button show up at the right most corner of the page */
 #light-dark-mode-toggle {
-    position: relative;
-    right: 0px;
+    position: absolute;
+    top: 0px;
+    right: 7px;
   
 }
 
@@ -45,16 +46,23 @@ main {
 
 #section1 {
     /* width: 545.5px; */
-    display: flex;
-    flex-direction: column;
+
+
+    /* display: flex;
+    flex-direction: column; */
 }
 
 #section2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 20px;
-    margin-right: 0px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 50px 20px; */
+    /* margin-right: 0px; */
     
 }
 
@@ -62,6 +70,7 @@ label {
     display: flex;
     flex-direction: column;
     margin: 10px 0px 10px 0px;
+    
 }
 
 .two-lines {
@@ -85,9 +94,13 @@ label {
 
 #question {
     width: fit-content;
-    position: relative;
+    align-self: center;
+    /* justify-self: ; */
+
+    /* Worked before */
+    /* position: relative;
     left: 160px;
-    margin-top: 150px;
+    margin-top: 150px; */
 }
 
 #content-box-styling {
