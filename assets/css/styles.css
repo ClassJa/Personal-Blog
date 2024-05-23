@@ -40,8 +40,23 @@ main {
   
 }
 
+.container {
+    background-color: aliceblue;
+    color: #222;
+}
+
 #light-dark-mode-toggle::after {
 
+}
+
+.dark {
+    background-color: #222;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: #222;
 }
 
 #section1 {

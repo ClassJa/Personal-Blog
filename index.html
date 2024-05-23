@@ -13,25 +13,32 @@
         
     </header>
     <main>
-        <section id="section1" class="two-lines">
-            <img src="./bloghwimg.png" id="scale-down-png"/>
-            <!-- <div>Add design Here</div> -->
-        </section>
-        <section id="section2" class="two-lines">
-            <h2 id="question">What's on your mind?</h2>
-            <label for="username">Username</label>
-            <input type="text" username="username" required minlength="3">
+        <div class="container">
+            <section id="section1" class="two-lines">
+                <img src="./bloghwimg.png" id="scale-down-png"/>
+                <!-- <div>Add design Here</div> -->
+            </section>
+        </div>
+            <section id="section2" class="two-lines">
+                <h2 id="question">What's on your mind?</h2>
+                <label for="username">Username</label>
+                <input type="text" username="username" required minlength="3">
+    
+                <label for="title">Title</label>
+                <input type="text" username="title" required minlength="3">
+                
+                <label for="content" id="content-box-styling">Content</label>
+                <textarea type="text" id="content-box" username="content" required minlength="3"></textarea>
+                
+                <button id="submit-button-style">Submit</button>
+            </section>
+            <script src="./assets/js/logic.js"></script>
+        <script src="./assets/js/form.js"></script>
+        </main>
+        
+    </body>
+    
 
-            <label for="title">Title</label>
-            <input type="text" username="title" required minlength="3">
-            
-            <label for="content" id="content-box-styling">Content</label>
-            <textarea type="text" id="content-box" username="content" required minlength="3"></textarea>
-            
-            <button id="submit-button-style">Submit</button>
-        </section>
-    </main>
-    <script src="./assets/js/logic.js"></script>
-    <script src="./assets/js/form.js"></script>
-</body>
+    
+        
 </html>

@@ -8,7 +8,8 @@
     color: white;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 180px;
+   
    
 }
 
@@ -17,7 +18,43 @@
     height: auto;
 }
 
+#light-dark-mode-toggle {
+    /* position: absolute;
+    top: 0px;
+    right: 7px; */
+  
+}
+
+header {
+  
+    
+}
+
+.top-space {
+    
+    /* display: flex; */
+    /* position: relative;
+    top: 5px;
+    right: 10px; */
+}
+
+#light-dark-mode-toggle {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+}
+
+
+/* 
 .dark {
     background-color: #222;
     color: white;
 }
+
+.light {
+    background-color: aliceblue;
+    color: #222;
+} */

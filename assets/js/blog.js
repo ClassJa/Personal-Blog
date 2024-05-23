@@ -13,3 +13,21 @@
 //         container.setAttribute('class', 'dark')
 //     }
 // }
+
+
+let blogPosts = localStorage.getItem('blogPosts');
+
+if (blogPosts) {
+   blogPosts = JSON.parse(blogPosts);
+} else {
+  blogPosts = [];
+}
+
+blogPosts.push(post);
+
+
+
+
+backButton.addEventListener('click', function(){
+   
+})
