@@ -30,7 +30,13 @@ const submittedEntry = document.querySelector('#user-input');
         localStorage.setItem('blogpost1', JSON.stringify(blogArray))
     }
 
-   
+
+    // set up event listen so when submit is clicked the content of the blog post form is rendered in the div boxes on the blog webpage
+
+    function renderBlogsToScreen() {
+        
+    }
+    
 
  
 

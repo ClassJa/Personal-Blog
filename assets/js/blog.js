@@ -6,3 +6,9 @@ prevPage.addEventListener('click', function(){
     // history.pushState()
     window.history.go(-1)
 })
+
+
+
+function renderBlogsToScreen() {
+
+}

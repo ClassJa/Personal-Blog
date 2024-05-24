@@ -82,7 +82,6 @@ label {
     flex-direction: column;
     color: aliceblue;
     background-color: var(--dark-color);
-    /* width: fit-content; */
     justify-self: center;
     align-self: center;
     margin: 15px 0px 10px 0px;
@@ -94,17 +93,12 @@ label {
 #question {
     width: fit-content;
     align-self: center;
-    /* justify-self: ; */
-
-    /* Worked before */
-    /* position: relative;
-    left: 160px;
-    margin-top: 150px; */
+  
 }
 
 #content-box-styling {
     line-height: 20px;
-    /* figure out how to extend the height of the box */
+  
 }
 
 #scale-down-png {
@@ -112,7 +106,7 @@ label {
     width: 750px;
 }
 
-/* DEBUG: why won't this button show up at the right most corner of the page */
+
 #light-dark-mode-toggle {
     position: absolute;
     top: 0px;
@@ -123,11 +117,7 @@ label {
 }
 
 #section1 {
-    /* width: 545.5px; */
-
-
-    /* display: flex;
-    flex-direction: column; */
+    
 }
 
 #section2 {
@@ -137,10 +127,6 @@ label {
     align-content: center;
     width: 100%;
 
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 50px 20px; */
-    /* margin-right: 0px; */
     
 }
 
