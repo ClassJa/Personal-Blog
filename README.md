@@ -8,7 +8,7 @@ This project utilizes the programming languages of Javascript to add logic to a 
 
 ## Credits 
 Sought out assistance from the websites and resources listed below: 
--- [X] https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+- [X] https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 - [X] AskBCS
 - [X] https://stackoverflow.com/questions/13318903/fill-parent-container
 - [X] TA - Akon 
