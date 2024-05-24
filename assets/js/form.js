@@ -2,7 +2,8 @@ const submitEl = document.querySelector('#submit-button-style');
 const titleInput = document.querySelector('#blog-title');
 const usernameInput = document.querySelector('#username');
 const blogPostInput = document.querySelector('#blog-post-content');
-const submittedEntry = document.querySelector('#user-input')
+const submittedEntry = document.querySelector('#user-input');
+
 
 
 

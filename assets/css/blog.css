@@ -3,6 +3,12 @@
     
 }
 
+:root {
+    --light-color: #F0F8FF;
+    --dark-color: #222;
+
+}
+
 #back-button {
     background-color: black;
     color: white;
@@ -39,14 +45,22 @@ header {
 }
 
 #light-dark-mode-toggle {
-    background-color: black;
-    color: white;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     position: absolute;
     top: 10px;
     right: 10px;
     height: 25px;
 }
 
+.div-boxes {
+    /* display: grid; */
+    width: auto;
+    height: auto;
+    border: 1px solid var(--dark-color);
+    padding: 10px;
+    margin: 10px;
+}
 
 /* 
 .dark {
@@ -58,3 +72,4 @@ header {
     background-color: aliceblue;
     color: #222;
 } */
+
