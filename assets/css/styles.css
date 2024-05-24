@@ -43,6 +43,8 @@ main {
     position: absolute;
     top: 0px;
     right: 7px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
   
 }
 
