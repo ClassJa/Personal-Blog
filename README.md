@@ -5,6 +5,7 @@ This project utilizes the programming languages of Javascript to add logic to a 
 
 ## Usage
 ![alt text](image.png)
+![alt text](image-1.png)
 
 ## Credits 
 Sought out assistance from the websites and resources listed below: 
