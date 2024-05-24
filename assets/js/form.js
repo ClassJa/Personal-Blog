@@ -32,6 +32,8 @@ function getUserame() {
     console.log(blogPostInput.value)
     return localStorage.getItem('blog-post-content')
   }
+
+  //  set items to local storage memory HELP!
   
   function updateHTML() {
     var usernameInput = getName();
@@ -65,6 +67,15 @@ function getUserame() {
     // Updates HTML
     updateHTML();
   }
+
+
+
+
+
+
+
+
+
 
 // addEventListener('click', submitForm) {
 

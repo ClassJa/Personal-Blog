@@ -4,6 +4,12 @@
 
 }
 
+:root {
+    --light-color: #F0F8FF;
+    --dark-color: #222;
+
+}
+
 html {
 
 }
@@ -41,8 +47,8 @@ main {
 }
 
 .container {
-    background-color: aliceblue;
-    color: #222;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 #light-dark-mode-toggle::after {
@@ -50,13 +56,13 @@ main {
 }
 
 .dark {
-    background-color: #222;
-    color: white;
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .light {
-    background-color: white;
-    color: #222;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 #section1 {
@@ -97,7 +103,7 @@ label {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    background-color: black;
+    background-color: var(--dark-color);
     /* width: fit-content; */
     justify-self: center;
     align-self: center;
