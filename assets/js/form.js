@@ -6,55 +6,45 @@ const submittedEntry = document.querySelector('#user-input');
 
 
 
-
-// function showResponse(event) {
-//     event.preventDefault();
-//     console.log(event);
-//     const response = titleInput.value + usernameInput.value + blogPostInput.value;
-
-//     submittedEntry.textContent = response;
-
-// }
-
-// submitEl.addEventListener('click', showResponse);
+    // submitEl.addEventListener('click', submitForm);
+    submitEl.addEventListener('click', saveToLStorage);
 
 
-function getUserame() {
-    console.log(usernameInput.value)
-    return localStorage.getItem("username");
-  }
+    // check local storage for if there are other blog posts present
+      // Saves data to retrieve later
+    function saveToLStorage() {
+        const name = document.getElementById("username").value;
+        const title = document.getElementById("blog-title").value;
+        const content = document.getElementById("blog-post-content").value;
+        const testObj = {
+            name: name,
+            title: title,
+            content: content,
+        }
+        const blogs = localStorage.getItem("blogpost1");
+        const arrBlog = JSON.parse(blogs)
+        const blogArray = arrBlog || [] 
+        blogArray.push(testObj)
 
-  function getTitle() {
-    console.log(titleInput.value)
-    return localStorage.getItem('blog-title')
-  }
-
-  function getBlogContent() {
-    console.log(blogPostInput.value)
-    return localStorage.getItem('blog-post-content')
-  }
-
-  //  set items to local storage memory HELP!
-  
-  function updateHTML() {
-    var usernameInput = getName();
-    var titleInput = getTitle();
-    var blogPostInput = getBlogContent();
-
-    document.getElementById("username").textContent = usernameInput;
-    document.getElementById("blog-title").textContent = titleInput;
-    document.getElementById("blog-post-content").textContent = blogPostInput;
-  }
-
-
-    function submitForm(event) {
-        event.preventDefault()
-        getUserame()
-        getTitle()
-        getBlogContent()
+        // converts the blog object to string type so it's able to save to local storage 
+        localStorage.setItem('blogpost1', JSON.stringify(blogArray))
     }
 
-    submitEl.addEventListener('click', submitForm);
+   
+
+
+        // if (localStorage.getItem) {
+
+        // }
+
+
+
+        // create an array of blog posts 
+
+        
+        // localStorage.setItem('title', title)
+        // localStorage.setItem('content', content)
+    
 
 
   
@@ -62,8 +52,10 @@ function getUserame() {
     // Gets input value
     var name = document.getElementById("myInput").value;
   
-    // Saves data to retrieve later
+  
     localStorage.setItem("userName", name);
+    localStorage.setItem()
+    localStorage.setItem()
     
     // Updates HTML
     updateHTML();

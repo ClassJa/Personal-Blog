@@ -15,15 +15,15 @@
 // }
 
 
-let blogPosts = localStorage.getItem('blogPosts');
+// let blogPosts = localStorage.getItem('blogPosts');
 
-if (blogPosts) {
-   blogPosts = JSON.parse(blogPosts);
-} else {
-  blogPosts = [];
-}
+// if (blogPosts) {
+//    blogPosts = JSON.parse(blogPosts);
+// } else {
+//   blogPosts = [];
+// }
 
-blogPosts.push(post);
+// blogPosts.push(post);
 
 
 

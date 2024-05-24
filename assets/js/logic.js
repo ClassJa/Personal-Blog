@@ -18,13 +18,13 @@ let mode = 'light';
 
 
 themeSwitcher.addEventListener('click', function(){
+    console.log(mode)
     if (mode === 'light') {
         mode = 'dark';
-        container.setAttribute('style', 'dark');
+        document.body.setAttribute('class', 'dark');
     } else {
         mode = 'light'
-        document.container.setAttribute('style', 'background-color: 240, 248, 255')
-        container.setAttribute('style', 'light')
+        document.body.setAttribute('class', 'light')
     }
 })
 
