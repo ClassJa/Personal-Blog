@@ -32,49 +32,5 @@ const submittedEntry = document.querySelector('#user-input');
 
    
 
-
-        // if (localStorage.getItem) {
-
-        // }
-
-
-
-        // create an array of blog posts 
-
-        
-        // localStorage.setItem('title', title)
-        // localStorage.setItem('content', content)
-    
-
-
-  
-  function myFunction() {
-    // Gets input value
-    var name = document.getElementById("myInput").value;
-  
-  
-    localStorage.setItem("userName", name);
-    localStorage.setItem()
-    localStorage.setItem()
-    
-    // Updates HTML
-    updateHTML();
-  }
-
-
-
-
-
-
-
-
-
-
-// addEventListener('click', submitForm) {
-
-// }
-
-
-// localStorage.setItem()
-
+ 
 
