@@ -55,11 +55,11 @@ label {
 }
 
 
-
+/* 
 .dark {
     background-color: var(--dark-color);
     color: var(--light-color);
-}
+} */
 .dark header, .dark footer, .dark main {
     background-color: var(--dark-color);
     color: var(--light-color);

@@ -24,6 +24,17 @@
     height: auto;
 }
 
+
+.dark .dark header, .dark footer, .dark main .dark div {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.light .light header, .light footer, .light main .light div {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
 #light-dark-mode-toggle {
     /* position: absolute;
     top: 0px;
@@ -42,6 +53,15 @@ header {
     /* position: relative;
     top: 5px;
     right: 10px; */
+}
+
+.light-dark-mode-toggle {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    /* position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px; */
 }
 
 #light-dark-mode-toggle {
