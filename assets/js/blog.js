@@ -1,5 +1,7 @@
 const themeSwitcher2 = document.querySelector('#light-dark-mode-toggle');
 const container2 = document.querySelector('.container');
+// const blogC = document.querySelectorAll('#bx')
+// const subButton = document.querySelector('#submit-button-style')
 
 const prevPage = document.querySelector("#back-button")
 
@@ -11,22 +13,29 @@ prevPage.addEventListener('click', function(){
 })
 
 
+// console.log(blogC) 
+// function renderBlogsToScreen() {
+//     for (const blogBox of blogC) {
+//         blogC.add
+       
+//     }
+// }
 
-function renderBlogsToScreen() {
-
-}
+// blogC.addEventListener('submit', )
 
 
-let mode = 'light';
+// let mode = 'light';
 
 
-themeSwitcher2.addEventListener('click', function(){
-    console.log(mode)
-    if (mode === 'light') {
-        mode = 'dark';
-        document.body.setAttribute('class', 'dark');
-    } else {
-        mode = 'light'
-        document.body.setAttribute('class', 'light')
-    }
-})
+// themeSwitcher2.addEventListener('click', function(){
+//     console.log(mode)
+//     if (mode === 'light') {
+//         mode = 'dark';
+//         document.body.setAttribute('class', 'dark');
+//     } else {
+//         mode = 'light'
+//         document.body.setAttribute('class', 'light')
+//     }
+// })
+
+
