@@ -3,6 +3,8 @@ const titleInput = document.querySelector('#blog-title');
 const usernameInput = document.querySelector('#username');
 const blogPostInput = document.querySelector('#blog-post-content');
 const submittedEntry = document.querySelector('#user-input');
+const subButton = document.getElementById('submit-button-style');
+const words = document.querySelector('.content-box');
 
 
 
@@ -33,10 +35,36 @@ const submittedEntry = document.querySelector('#user-input');
 
     // set up event listen so when submit is clicked the content of the blog post form is rendered in the div boxes on the blog webpage
 
-    function renderBlogsToScreen() {
-        
-    }
+    // function renderBlogsToScreen() {
+
+    // }
     
+let buttonClicked = false;
+console.log(buttonClicked)
+console.log(subButton)
+
+subButton.addEventListener('click', function(event){
+    event.preventDefault()
+    buttonClicked = true
+    console.log(subButton)
+    console.log(buttonClicked)
+})
+
+if (buttonClicked){
+    console.log(buttonClicked)
+    console.log(blogC) 
+    console.log(words.textContent)
+    console.log(words.value)
+    function renderBlogsToScreen() {
+        for (const blogBox of blogC) {
+            blogBox.textContent = words.value
+        
+        }
+    }
+
+subButton.addEventListener('click', renderBlogsToScreen)
+
+}
 
  
 
