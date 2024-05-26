@@ -25,12 +25,12 @@
 }
 
 
-.dark .dark header, .dark footer, .dark main .dark div {
+.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-.light .light header, .light footer, .light main .light div {
+.light, .light header, .light footer, .light main, .light div, .light h2{
     background-color: var(--light-color);
     color: var(--dark-color);
 }

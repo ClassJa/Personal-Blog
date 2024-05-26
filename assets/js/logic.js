@@ -2,7 +2,7 @@
 
 const themeSwitcher = document.querySelector('#light-dark-mode-toggle');
 const container = document.querySelector('.container');
-const blogC = document.querySelectorAll('#bx');
+// const blogC = document.querySelectorAll('#bx');
 // const subButton = document.getElementById('submit-button-style');
 // const subButton = document.querySelector('#submit-button-style');
 // const words = document.querySelector('.content-box');

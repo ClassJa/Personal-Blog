@@ -3,9 +3,11 @@ const titleInput = document.querySelector('#blog-title');
 const usernameInput = document.querySelector('#username');
 const blogPostInput = document.querySelector('#blog-post-content');
 const submittedEntry = document.querySelector('#user-input');
+const blogC = document.querySelectorAll('#bx')
 // const subButton = document.querySelector('#submit-button-style');
 // const subButton = document.getElementById('submit-button-style');
 // const words = document.querySelector('.content-box');
+
 
 
 
@@ -60,26 +62,26 @@ console.log(blogPostInput.value)
 submitEl.addEventListener('click', function(event){
     event.preventDefault()
     buttonClicked = true
-})
+
 
 function renderBlogsToScreen() {
     if (buttonClicked){
+        console.log(titleInput.value)
+        console.log(usernameInput.value)
+        console.log(blogPostInput.value)
+        console.log("button Clicked")
         console.log(blogPostInput.textContent) 
-        console.log(words.textContent)
-        console.log(words.value)
-        function renderBlogsToScreen() {
-            for (const blogBox of blogC) {
-                blogBox.textContent = words.value
-            
-            }
+        for (const blogBox of blogC) {
+            blogBox.textContent = blogPostInput.value
         }
     // submitEl.addEventListener('click', renderBlogsToScreen)
-    }
-    else{
+    } else if (buttonClicked && titleInput.value === null || usernameInput.value === null || blogPostInput.value === null) {
         alert("Please fill out a blog entry before clicking submit")
     }
+    console.log("???")
 }
 
 renderBlogsToScreen()
- 
+})
 
+// function renderBlogsToScreen() {
