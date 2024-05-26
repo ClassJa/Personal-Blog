@@ -3,8 +3,9 @@ const titleInput = document.querySelector('#blog-title');
 const usernameInput = document.querySelector('#username');
 const blogPostInput = document.querySelector('#blog-post-content');
 const submittedEntry = document.querySelector('#user-input');
-const subButton = document.getElementById('submit-button-style');
-const words = document.querySelector('.content-box');
+// const subButton = document.querySelector('#submit-button-style');
+// const subButton = document.getElementById('submit-button-style');
+// const words = document.querySelector('.content-box');
 
 
 
@@ -39,32 +40,46 @@ const words = document.querySelector('.content-box');
 
     // }
     
+// let buttonClicked = false;
+// console.log(buttonClicked)
+// console.log(submitEl.value)
+
+// submitEl.addEventListener('click', function(event){
+//     event.preventDefault()
+//     buttonClicked = true
+// })
+
+
+
+
 let buttonClicked = false;
 console.log(buttonClicked)
-console.log(subButton)
+console.log(submitEl.textContent)
+console.log(blogPostInput.value)
 
-subButton.addEventListener('click', function(event){
+submitEl.addEventListener('click', function(event){
     event.preventDefault()
     buttonClicked = true
-    console.log(subButton)
-    console.log(buttonClicked)
 })
 
-if (buttonClicked){
-    console.log(buttonClicked)
-    console.log(blogC) 
-    console.log(words.textContent)
-    console.log(words.value)
-    function renderBlogsToScreen() {
-        for (const blogBox of blogC) {
-            blogBox.textContent = words.value
-        
+function renderBlogsToScreen() {
+    if (buttonClicked){
+        console.log(blogPostInput.textContent) 
+        console.log(words.textContent)
+        console.log(words.value)
+        function renderBlogsToScreen() {
+            for (const blogBox of blogC) {
+                blogBox.textContent = words.value
+            
+            }
         }
+    // submitEl.addEventListener('click', renderBlogsToScreen)
     }
-
-subButton.addEventListener('click', renderBlogsToScreen)
-
+    else{
+        alert("Please fill out a blog entry before clicking submit")
+    }
 }
 
+renderBlogsToScreen()
  
 
