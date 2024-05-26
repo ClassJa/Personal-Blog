@@ -25,15 +25,22 @@
 }
 
 
-.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark button, .dark .div-boxes, .dark p, .dark strong {
+.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark button, .dark p, .dark strong {
     background-color: var(--dark-color);
     color: var(--light-color);
+}
+
+.light, .light header, .light footer, .light main, .light div, .light h2, .light button, .light p, .light strong {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+   
+}
+
+.dark .div-boxes {
     border: 1px solid var(--light-color);
 }
 
-.light, .light header, .light footer, .light main, .light div, .light h2, .light button, .light .div-boxes, .dark p, .light strong {
-    background-color: var(--light-color);
-    color: var(--dark-color);
+.light .div-boxes {
     border: 1px solid var(--dark-color);
 }
 
