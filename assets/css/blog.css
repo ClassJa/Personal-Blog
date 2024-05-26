@@ -25,13 +25,13 @@
 }
 
 
-.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark button, .dark .div-boxes {
+.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark button, .dark .div-boxes, .dark p, .dark strong {
     background-color: var(--dark-color);
     color: var(--light-color);
     border: 1px solid var(--light-color);
 }
 
-.light, .light header, .light footer, .light main, .light div, .light h2, .light button, .light .div-boxes {
+.light, .light header, .light footer, .light main, .light div, .light h2, .light button, .light .div-boxes, .dark p, .light strong {
     background-color: var(--light-color);
     color: var(--dark-color);
     border: 1px solid var(--dark-color);
