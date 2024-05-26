@@ -60,17 +60,25 @@ label {
     background-color: var(--dark-color);
     color: var(--light-color);
 } */
-.dark header, .dark footer, .dark main {
+.dark header, .dark footer, .dark main, .dark html, .dark div {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-.light header, .light footer, .light main{
+.light header, .light footer, .light main, .light html, .light div {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
 
+.dark section, .dark h2, .dark label, .dark form {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
 
+.light section, .light h2, .light form {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
 
 .two-lines {
     border: thick double black;
