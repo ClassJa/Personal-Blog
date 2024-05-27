@@ -3,7 +3,7 @@ const titleInput = document.querySelector('#blog-title');
 const usernameInput = document.querySelector('#username');
 const blogPostInput = document.querySelector('#blog-post-content');
 const submittedEntry = document.querySelector('#user-input');
-const blogC = document.querySelectorAll('#bx')
+// const blogC = document.querySelectorAll('#bx')
 // const subButton = document.querySelector('#submit-button-style');
 // const subButton = document.getElementById('submit-button-style');
 // const words = document.querySelector('.content-box');
@@ -59,7 +59,7 @@ const blogC = document.querySelectorAll('#bx')
         const arrBlog = JSON.parse(blogs)
         const blogArray = arrBlog || [] 
         blogArray.push(testObj)
-        console.log(blogArray)
+        // console.log(blogArray)
         // converts the blog object to string type so it's able to save to local storage 
         // const whatToPrint = localStorage.getItem('blogpost')
 
@@ -90,37 +90,37 @@ const blogC = document.querySelectorAll('#bx')
 // })
 
 
+// uncomment soon 
+
+// let buttonClicked = false;
+// console.log(buttonClicked)
+// console.log(submitEl.textContent)
+// console.log(blogPostInput.value)
+
+// submitEl.addEventListener('click', function(event){
+//     event.preventDefault()
+//     buttonClicked = true
 
 
-let buttonClicked = false;
-console.log(buttonClicked)
-console.log(submitEl.textContent)
-console.log(blogPostInput.value)
+// function renderBlogsToScreen() {
+//     if (buttonClicked){
+//         console.log(titleInput.value)
+//         console.log(usernameInput.value)
+//         console.log(blogPostInput.value)
+//         console.log("button Clicked")
+//         console.log(blogPostInput.textContent) 
+//         for (const blogBox of blogC) {
+//             blogBox.textContent = blogPostInput.value
+//             blogBox.setAttribute = blogPostInput.value
+//         }
+//     // submitEl.addEventListener('click', renderBlogsToScreen)
+//     } else if (buttonClicked && titleInput.value === null || usernameInput.value === null || blogPostInput.value === null) {
+//         alert("Please fill out a blog entry before clicking submit")
+//     }
+//     console.log("???")
+// }
 
-submitEl.addEventListener('click', function(event){
-    event.preventDefault()
-    buttonClicked = true
-
-
-function renderBlogsToScreen() {
-    if (buttonClicked){
-        console.log(titleInput.value)
-        console.log(usernameInput.value)
-        console.log(blogPostInput.value)
-        console.log("button Clicked")
-        console.log(blogPostInput.textContent) 
-        for (const blogBox of blogC) {
-            blogBox.textContent = blogPostInput.value
-            blogBox.setAttribute = blogPostInput.value
-        }
-    // submitEl.addEventListener('click', renderBlogsToScreen)
-    } else if (buttonClicked && titleInput.value === null || usernameInput.value === null || blogPostInput.value === null) {
-        alert("Please fill out a blog entry before clicking submit")
-    }
-    console.log("???")
-}
-
-renderBlogsToScreen()
-})
+// renderBlogsToScreen()
+// })
 
 // function renderBlogsToScreen() {

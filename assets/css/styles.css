@@ -34,6 +34,11 @@ main {
     
 }
 
+a {
+    display: flex;
+    justify-content: center;
+}
+
 
 label {
     display: flex;
@@ -60,14 +65,14 @@ label {
     background-color: var(--dark-color);
     color: var(--light-color);
 } */
-.dark header, .dark footer, .dark main, .dark html, .dark div {
+.dark header, .dark footer, .dark main, .dark html, .dark div, .dark a{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
 
 
-.light header, .light footer, .light main, .light html, .light div {
+.light header, .light footer, .light main, .light html, .light div, .light a {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
@@ -94,13 +99,16 @@ label {
     flex-direction: column;
     color: aliceblue;
     background-color: var(--dark-color);
-    justify-self: center;
-    align-self: center;
+    /* justify-content: center;
+    align-content: center; */
+    /* justify-self: center; */
+    /* align-self: center; */
     margin: 15px 0px 10px 0px;
     padding: 5px 250px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 
 }
+
 
 #question {
     width: fit-content;
