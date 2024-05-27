@@ -1,7 +1,7 @@
 // Add general logic including
 
 const themeSwitcher = document.querySelector('#light-dark-mode-toggle');
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 // const blogC = document.querySelectorAll('#bx');
 // const subButton = document.getElementById('submit-button-style');
 // const subButton = document.querySelector('#submit-button-style');
@@ -13,13 +13,12 @@ let mode = 'light';
 
 
 themeSwitcher.addEventListener('click', function(){
-    console.log(mode)
     if (mode === 'light') {
         mode = 'dark';
         document.body.setAttribute('class', 'dark');
     } else {
         mode = 'light'
-        document.body.setAttribute('class', 'light')
+        document.body.setAttribute('class', 'light');
     }
 })
 

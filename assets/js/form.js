@@ -11,29 +11,67 @@ const blogC = document.querySelectorAll('#bx')
 
 
 
-    // submitEl.addEventListener('click', submitForm);
-    submitEl.addEventListener('click', saveToLStorage);
-
+  
 
     // check local storage for if there are other blog posts present
       // Saves data to retrieve later
-    function saveToLStorage() {
+
+
+
+    // function saveToLStorage() {
+    //     const name = document.getElementById("username").value;
+    //     const title = document.getElementById("blog-title").value;
+    //     const content = document.getElementById("blog-post-content").value;
+    //     const testObj = {
+    //         name: name,
+    //         title: title,
+    //         content: content
+    //     }
+    //     const blogs = localStorage.getItem("blogpost");
+    //     const arrBlog = JSON.parse(blogs)
+    //     const blogArray = arrBlog || [] 
+    //     blogArray.push(testObj)
+
+    //     // converts the blog object to string type so it's able to save to local storage 
+    //     localStorage.setItem('blogpost', JSON.stringify(blogArray))
+    // }
+
+
+    //   // submitEl.addEventListener('click', submitForm);
+    //   submitEl.addEventListener('click', saveToLStorage);
+
+
+    // function setBlogText(){
+    //     blogC.textContent = testObj
+    // }
+
+      submitEl.addEventListener('click', function(event) {
+        event.preventDefault()
         const name = document.getElementById("username").value;
         const title = document.getElementById("blog-title").value;
         const content = document.getElementById("blog-post-content").value;
         const testObj = {
             name: name,
             title: title,
-            content: content,
+            content: content
         }
-        const blogs = localStorage.getItem("blogpost1");
+        const blogs = localStorage.getItem("blogpost");
         const arrBlog = JSON.parse(blogs)
         const blogArray = arrBlog || [] 
         blogArray.push(testObj)
 
         // converts the blog object to string type so it's able to save to local storage 
-        localStorage.setItem('blogpost1', JSON.stringify(blogArray))
-    }
+        const whatToPrint = localStorage.getItem('blogpost')
+
+
+        localStorage.setItem('blogpost', JSON.stringify(blogArray))
+
+        for (let i = 0; i < blogC.length; i ++){
+            blogC[i].textContent = whatToPrint
+        }
+      
+      })
+
 
 
     // set up event listen so when submit is clicked the content of the blog post form is rendered in the div boxes on the blog webpage
@@ -73,6 +111,7 @@ function renderBlogsToScreen() {
         console.log(blogPostInput.textContent) 
         for (const blogBox of blogC) {
             blogBox.textContent = blogPostInput.value
+            blogBox.setAttribute = blogPostInput.value
         }
     // submitEl.addEventListener('click', renderBlogsToScreen)
     } else if (buttonClicked && titleInput.value === null || usernameInput.value === null || blogPostInput.value === null) {

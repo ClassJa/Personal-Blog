@@ -1,7 +1,3 @@
-* {
-    background-color: aliceblue;
-    
-}
 
 :root {
     --light-color: #F0F8FF;
@@ -9,14 +5,20 @@
 
 }
 
-#back-button {
-    background-color: black;
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 180px;
-   
-   
+
+header {
+  
+    
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  
 }
 
 .blog-box {
@@ -25,12 +27,12 @@
 }
 
 
-.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark button, .dark p, .dark strong {
+.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark p, .dark strong {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-.light, .light header, .light footer, .light main, .light div, .light h2, .light button, .light p, .light strong {
+.light, .light header, .light footer, .light main, .light div, .light h2, .light p, .light strong {
     background-color: var(--light-color);
     color: var(--dark-color);
    
@@ -42,18 +44,6 @@
 
 .light .div-boxes {
     border: 1px solid var(--dark-color);
-}
-
-#light-dark-mode-toggle {
-    /* position: absolute;
-    top: 0px;
-    right: 7px; */
-  
-}
-
-header {
-  
-    
 }
 
 .top-space {
@@ -73,14 +63,6 @@ header {
     height: 25px; */
 }
 
-#light-dark-mode-toggle {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 25px;
-}
 
 .div-boxes {
     /* display: grid; */
@@ -90,21 +72,42 @@ header {
     color: var(--dark-color); */
     padding: 10px;
     margin: 10px;
+    border: 1px solid var(--dark-color);
 }
 
 
-footer {
-    position: relative;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  
-}
+
 #center-footer {
     align-self: center;
 }
+
+
+/* #light-dark-mode-toggle {
+    /* position: absolute;
+    top: 0px;
+    right: 7px; 
+} */
+ 
+
+#back-button {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 180px;
+   
+   
+}
+
+#light-dark-mode-toggle {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    height: 25px;
+}
+
 
 /* 
 .dark {

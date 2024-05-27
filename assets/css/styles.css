@@ -65,17 +65,21 @@ label {
     color: var(--light-color);
 }
 
+
+
 .light header, .light footer, .light main, .light html, .light div {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
 
-.dark section, .dark h2, .dark label, .dark form {
+
+
+.dark section, .dark h2, .dark label, .dark form, .dark #light-dark-mode-toggle{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-.light section, .light h2, .light form {
+.light section, .light h2, .light form, .light #light-dark-mode-toggle{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
@@ -117,10 +121,10 @@ label {
 
 #light-dark-mode-toggle {
     position: absolute;
-    top: 0px;
+    top: 7px;
     right: 7px;
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    /* background-color: var(--dark-color);
+    color: var(--light-color); */
   
 }
 
@@ -136,8 +140,4 @@ label {
     width: 100%;
 
     
-}
-
-#light-dark-mode-toggle::after {
-
 }
