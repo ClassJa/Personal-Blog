@@ -27,12 +27,12 @@ footer {
 }
 
 
-.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark p, .dark strong {
+.dark, .dark header, .dark footer, .dark main, .dark div, .dark h2, .dark p, .dark strong, .dark #light-dark-mode-toggle, .dark #back-button{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-.light, .light header, .light footer, .light main, .light div, .light h2, .light p, .light strong {
+.light, .light header, .light footer, .light main, .light div, .light h2, .light p, .light strong, .light #light-dark-mode-toggle, .light #back-button{
     background-color: var(--light-color);
     color: var(--dark-color);
    
@@ -93,17 +93,17 @@ footer {
     background-color: black;
     color: white;
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 180px;
    
    
 }
 
 #light-dark-mode-toggle {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    /* background-color: var(--dark-color);
+    color: var(--light-color); */
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 10px;
     height: 25px;
 }
