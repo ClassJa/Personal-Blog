@@ -1,5 +1,6 @@
 const themeSwitcher2 = document.querySelector('#light-dark-mode-toggle');
 const container2 = document.querySelector('.container');
+const blogBoxContainer = document.querySelector(".blog-box")
 // const blogC = document.querySelectorAll('#bx')
 // const subButton = document.querySelector('#submit-button-style')
 
@@ -12,17 +13,31 @@ prevPage.addEventListener('click', function(){
     window.history.go(-1)
 })
 
-
+const blogC = JSON.parse(localStorage.getItem("blogpost")) || [];
 // console.log(blogC) 
-// function renderBlogsToScreen() {
-//     for (const blogBox of blogC) {
-//         blogC.add
-       
-//     }
-// }
+function renderBlogsToScreen() {
+    for (const blogBox of blogC) {
+        console.log(blogBox)
+        // blogC.add
+    //     <div class="div-boxes bx">     
+    //     Blog Title
+    //     <p>Here is the content</p>
+    //     <footer> Posted By: </footer>
+    // </div>
+const blogBoxDiv = document.createElement("div")
+// add class to this 
+blogBoxDiv.textContent = "Blog Title"
+const blogBoxTitle = document.createElement("p")
+blogBoxTitle.textContent = blogBox.title
+const blogBoxFooter = document.createElement("footer")
+blogBoxFooter.textContent = `Posted By: ${blogBox.name}`
+blogBoxDiv.append(blogBoxTitle, blogBoxFooter)
+blogBoxContainer.appendChild(blogBoxDiv)
+    }
+}
 
 // blogC.addEventListener('submit', )
-
+renderBlogsToScreen()
 
 // let mode = 'light';
 

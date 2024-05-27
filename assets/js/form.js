@@ -59,16 +59,16 @@ const blogC = document.querySelectorAll('#bx')
         const arrBlog = JSON.parse(blogs)
         const blogArray = arrBlog || [] 
         blogArray.push(testObj)
-
+        console.log(blogArray)
         // converts the blog object to string type so it's able to save to local storage 
-        const whatToPrint = localStorage.getItem('blogpost')
+        // const whatToPrint = localStorage.getItem('blogpost')
 
 
         localStorage.setItem('blogpost', JSON.stringify(blogArray))
 
-        for (let i = 0; i < blogC.length; i ++){
-            blogC[i].textContent = whatToPrint
-        }
+        // for (let i = 0; i < blogC.length; i ++){
+        //     blogC[i].textContent = blogs
+        // }
       
       })
 
