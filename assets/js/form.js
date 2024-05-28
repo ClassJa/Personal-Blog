@@ -1,7 +1,7 @@
 const submitEl = document.querySelector('#submit-button-style');
-const titleInput = document.querySelector('#blog-title');
-const usernameInput = document.querySelector('#username');
-const blogPostInput = document.querySelector('#blog-post-content');
+// const titleInput = document.querySelector('#blog-title');
+// const usernameInput = document.querySelector('#username');
+// const blogPostInput = document.querySelector('#blog-post-content');
 const submittedEntry = document.querySelector('#user-input');
 // const blogC = document.querySelectorAll('#bx')
 // const subButton = document.querySelector('#submit-button-style');
@@ -58,14 +58,15 @@ const submittedEntry = document.querySelector('#user-input');
         const blogs = localStorage.getItem("blogpost");
         const arrBlog = JSON.parse(blogs)
         const blogArray = arrBlog || [] 
-        blogArray.push(testObj)
+        // blogArray.push(testObj)
+        blogArray.push(blogs)
         // console.log(blogArray)
         // converts the blog object to string type so it's able to save to local storage 
         // const whatToPrint = localStorage.getItem('blogpost')
 
 
         localStorage.setItem('blogpost', JSON.stringify(blogArray))
-
+        
         // for (let i = 0; i < blogC.length; i ++){
         //     blogC[i].textContent = blogs
         // }
