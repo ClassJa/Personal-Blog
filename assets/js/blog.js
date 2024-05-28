@@ -57,45 +57,48 @@ const submitButton = document.querySelector("#submit-button-style")
 
 submitButton.addEventListener('click', function(){
     const blogC = JSON.parse(localStorage.getItem("blogpost")) || [];
-    function renderBlogsToScreen() {
-        for (const blogBox of blogC) {
-            console.log(blogBox)
-            // blogC.add
-        //     <div class="div-boxes bx">     
-        //     Blog Title
-        //     <p>Here is the content</p>
-        //     <footer> Posted By: </footer>
-        // </div>
-    const blogBoxDiv = document.createElement("div")
-    // add class to this 
-    blogBoxDiv.textContent = "Title: " + blogBox.title
-    const blogBoxContent = document.createElement("p")
-    blogBoxContent.textContent = blogBox.content
-    // blogBoxTitle.textContent = blogBox.title
-    const blogBoxFooter = document.createElement("footer")
-    blogBoxFooter.textContent = `Posted By: ${blogBox.name}`
-    
-    
-        console.log(blogBox.title)  
-        console.log(blogBox.name)
-        console.log(blogBox.content)
-    
-    
-        if (blogBox.content.trim() === "" || blogBox.title.trim() === "" || blogBox.name.trim() === "") {
-            console.log(blogBox.title)
-            console.log(blogBox.name)
-            console.log(blogBox.content)
-            alert("Please enter a name, title, and content to the blog form before you submit")
-        } else {
-            blogBoxDiv.append(blogBoxContent, blogBoxFooter)
-            blogBoxContainer.appendChild(blogBoxDiv)
-        }
-            
-        }
-    }
+   
 })
 // renderBlogsToScreen()
 
+
+
+function renderBlogsToScreen() {
+    for (const blogBox of blogC) {
+        console.log(blogBox)
+        // blogC.add
+    //     <div class="div-boxes bx">     
+    //     Blog Title
+    //     <p>Here is the content</p>
+    //     <footer> Posted By: </footer>
+    // </div>
+const blogBoxDiv = document.createElement("div")
+// add class to this 
+blogBoxDiv.textContent = "Title: " + blogBox.title
+const blogBoxContent = document.createElement("p")
+blogBoxContent.textContent = blogBox.content
+// blogBoxTitle.textContent = blogBox.title
+const blogBoxFooter = document.createElement("footer")
+blogBoxFooter.textContent = `Posted By: ${blogBox.name}`
+
+
+    console.log(blogBox.title)  
+    console.log(blogBox.name)
+    console.log(blogBox.content)
+
+
+    if (blogBox.content.trim() === "" || blogBox.title.trim() === "" || blogBox.name.trim() === "") {
+        console.log(blogBox.title)
+        console.log(blogBox.name)
+        console.log(blogBox.content)
+        alert("Please enter a name, title, and content to the blog form before you submit")
+    } else {
+        blogBoxDiv.append(blogBoxContent, blogBoxFooter)
+        blogBoxContainer.appendChild(blogBoxDiv)
+    }
+        
+    }
+}
 // let mode = 'light';
 
 

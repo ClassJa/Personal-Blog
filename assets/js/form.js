@@ -53,16 +53,18 @@ const submittedEntry = document.querySelector('#user-input');
         const testObj = {
             name: name,
             title: title,
-            content: content
+            content: content,
         }
         const blogs = localStorage.getItem("blogpost");
         const arrBlog = JSON.parse(blogs)
         const blogArray = arrBlog || [] 
-        // blogArray.push(testObj)
-        blogArray.push(blogs)
+        console.log(arrBlog)
+        blogArray.push(testObj)
+        console.log(JSON.stringify(blogArray))
+        // blogArray.push(blogs)
         // console.log(blogArray)
         // converts the blog object to string type so it's able to save to local storage 
-        // const whatToPrint = localStorage.getItem('blogpost')
+        const whatToPrint = localStorage.getItem('blogpost')
 
 
         localStorage.setItem('blogpost', JSON.stringify(blogArray))
